@@ -1,0 +1,23 @@
+{
+  "name": "bootstrap-my-owner",
+  "authors": [
+    "lilJay-lin <8293526jie@>"
+  ],
+  "description": "bootstrap",
+  "main": "",
+  "keywords": [
+    "bootstrap"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.6"
+  }
+}

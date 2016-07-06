@@ -21,7 +21,7 @@ gulp.task('sass', function() {
     return gulp.src(config.source.scss)
         .pipe(plumber({errorHandler: function (err) {
             console.log(err);
-            //this.emit('end');
+            this.emit('end');
         }}))
         .pipe(gulpSass())
         .pipe(gulp.dest(config.dist.scss));
@@ -30,14 +30,23 @@ gulp.task('html', function() {
     return gulp.src(config.source.html)
         .pipe(gulp.dest(config.dist.html));
 });
-gulp.task('sass-watch', ['sass'], browserSync.reload);
+gulp.task('sass-watch', ['sass'], function (){
+    browserSync.reload();
+});
 gulp.task('html-watch', ['html'], function (){
     browserSync.reload();
 });
 
-gulp.task('server',['sass','html'], function(){
+gulp.task('server', function(){
     browserSync.init({
-        server: config.base
+        notify: false,
+        server: {
+            baseDir: config.base
+        },
+        injectChanges: true,
+        //logLevel: "debug",
+        browser: "google chrome",
+        open: false
     });
 
     gulp.watch(config.source.scss, ['sass-watch']);

@@ -1,0 +1,25 @@
+{
+  "name": "bootstrap-my-owner",
+  "version": "1.0.0",
+  "description": "bootstrap ",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lilJay-lin/bootstrap-my-owner.git"
+  },
+  "author": "lilJay-lin <8293526jie@>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lilJay-lin/bootstrap-my-owner/issues"
+  },
+  "homepage": "https://github.com/lilJay-lin/bootstrap-my-owner#readme",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2"
+  }
+}

@@ -1,0 +1,70 @@
+@main-color: #2A3F54;
+@nav-menu: #EDEDED;
+@right-content-color: #fff;
+@left-slider-width: 220px;
+@top-nav-height: 50px;
+@footer-height: 50px;
+
+html,body{
+  margin:0;
+  padding:0;
+  background-color:@right-content-color;
+}
+.container{
+  background-color: @main-color;
+  width: 100%;
+  color: #fff;
+}
+/*头部导航*/
+.top-nav{
+  position: absolute;
+  margin-left: @left-slider-width;
+  height: @top-nav-height;
+  background-color: @nav-menu;
+  right:0;
+  left:0;
+  top:0;
+}
+
+/*侧边栏*/
+.left-slider{
+  position: absolute;
+  z-index: 999
+}
+
+.slider-view{
+  width: @left-slider-width;
+  background-color: @main-color;
+  margin-bottom:@footer-height;
+  padding:0;
+  margin:0;
+}
+
+
+/*右边内容区域*/
+.right-content{
+  padding:0;
+  margin:0;
+  padding-top:@top-nav-height;
+  margin-left: @left-slider-width;
+  background-color:@right-content-color;
+  margin-bottom:@footer-height  color: #2e2e2e;
+;
+  min-height: 100%;
+}
+
+/*底部*/
+footer{
+  display: block;
+}
+.footer{
+  background-color: @main-color;
+  height: @footer-height;
+  position: fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index: 999;
+  color: #000011;
+  text-align: center;
+}

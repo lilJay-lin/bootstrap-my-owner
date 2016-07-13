@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta http-equiv="Cache-Control" content="no-transform"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta content="yes" name="apple-touch-fullscreen"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title>页面框架布局</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+</head>
+<body>
+<div class="container">
+    <aside class="left-slider">
+        <a href="" class="logo">后台管理</a>
+        <div class="slider-view">
+            <ul >
+                <li class="submenu open">
+                    <a href="#"><i class="icon icon-th-list"></i> <span>用户管理</span> <span class="label">4</span></a>
+                    <ul>
+                        <li><a href="form-common.html">搜索用户</a></li>
+                        <li class="active"><a href="form-validation.html">用户详情</a></li>
+                        <li><a href="form-wizard.html">添加用户</a></li>
+                        <li><a href="form-wizard.html">修改用户</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <header class="top-nav">
+        <div class="nav-menu">
+            <ul class="nav">
+                <li>
+                    <a href="">
+                        <img src="img/avatar.jpg" alt="" class="img-user">
+                        <strong>@john</strong>
+                    </a>
+                </li>
+                <li><a href="">退出</a></li>
+                <li><a href="">登录</a></li>
+            </ul>
+        </div>
+    </header>
+    <aside class="right-content">
+        <div class="content">
+            <div class="content-header">
+                <div class="breadcrumb">
+                    <a href="#" class="tip-bottom" data-original-title="Go to Home"><i class="icon-home"></i>首页</a>
+                    <a href="#" class="tip-bottom" data-original-title="Go to Home">用户管理</a>
+                    <a href="#" class="current">用户详情</a> </div>
+                <h1>用户详情</h1>
+            </div>
+            <div class="content-container">
+                <hr/>
+                <div class="widget-box">
+                    <div class="widget-title"><span class="icon"><i class="icon-th"></i></span>
+                        <h5>用户详情</h5>
+                    </div>
+                    <div class="widget-content nopadding">
+                        <form action="#" method="get" class="form-horizontal">
+                            <div class="control-group">
+                                <label class="control-label">登录名</label>
+                                <div class="controls">
+                                    <input type="text" class="span5" placeholder="登录名">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label">手机</label>
+                                <div class="controls">
+                                    <input type="text" class="span5" placeholder="手机">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label">身份证</label>
+                                <div class="controls">
+                                    <input type="text" class="span5" placeholder="身份证">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label">姓名</label>
+                                <div class="controls">
+                                    <input type="text" class="span5" placeholder="姓名">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label">密码</label>
+                                <div class="controls">
+                                    <input type="text" class="span5" placeholder="密码">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label">描述</label>
+                                <div class="controls">
+                                    <textarea class="span10"></textarea>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label">已担当角色</label>
+                                <div class="controls">
+                                    <ul class="relation-list noicon">
+                                        <li><i class="icon-remove"></i> icon-remove</li>
+                                        <li><i class="icon-remove"></i> icon-remove</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label">已关联私人订单</label>
+                                <div class="controls">
+                                    <ul class="relation-list noicon">
+                                        <li><i class="icon-remove"></i> icon-remove</li>
+                                        <li><i class="icon-remove"></i> icon-remove</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-success">返回</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <footer>
+        <div class="footer">
+            底部fixed
+        </div>
+    </footer>
+</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/custom.js"></script>
+</html>

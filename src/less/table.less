@@ -1,0 +1,103 @@
+.dataTables-filter-wrap{
+    height: 45px;
+    position: relative;
+    .btn{
+        padding:3px 12px;
+    }
+}
+.dataTables-filter {
+    color: #878787;
+    font-size: 11px;
+    left: 0;
+    top: 5px;
+    margin: 10px 15px 0px 20px;
+    position: absolute;
+    text-align: left;
+    .btn{
+        margin-bottom: 10px;
+    }
+    .form-control{
+        display: inline-block;
+    }
+}
+
+table {
+    max-width: 100%;
+    background-color: transparent;
+    border-spacing: 0;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-collapse: separate;
+    border-left: 0;
+    border-radius: 0px;
+}
+.table td {
+    padding: 8px;
+    line-height: 20px;
+    text-align: left;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    font-size: 12px;
+    color: #666;
+}
+.table th {
+    line-height: 20px;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    font-weight: bold;
+    background: #efefef;
+    border-bottom: 1px solid #CDCDCD;
+    height: auto;
+    font-size: 10px;
+    padding: 5px 10px 2px;
+    border-bottom: 0;
+    text-align: center;
+    color: #666666;
+    vertical-align: bottom;
+}
+.table caption+thead tr:first-child th, .table caption+tbody tr:first-child th, .table caption+tbody tr:first-child td,
+.table colgroup+thead tr:first-child th,
+.table colgroup+tbody tr:first-child th,
+.table colgroup+tbody tr:first-child td,
+.table thead:first-child tr:first-child th,
+.table tbody:first-child tr:first-child th,
+.table tbody:first-child tr:first-child td {
+    border-top: 0;
+}
+.table tbody>tr:nth-child(odd)>td, .table tbody>tr:nth-child(odd)>th {
+    background-color: #f9f9f9;
+}
+.table.with-check tr th:first-child, .table.with-check tr td:first-child {
+     width: 10px;
+}
+/*操作按钮组*/
+.operation-group{
+    text-align: center;
+    > a + a{
+        margin-left: 25px;
+    }
+    > a{
+        i {
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+    }
+}
+
+.fg-toolbar-operation{
+    text-align: center;
+
+    .form-control{
+        display: inline-block;
+        margin:0;
+    }
+}
+
+.search-table-box{
+    position: relative;
+    border: 1px solid #cdcdcd;
+    overflow: hidden;
+    padding: 15px;
+}

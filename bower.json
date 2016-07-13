@@ -17,11 +17,8 @@
     "test",
     "tests"
   ],
-  "devDependencies": {
-    "bootstrap-sass": "^3.3.6"
-  },
+  "devDependencies": {},
   "dependencies": {
-    "gentelella": "^1.3.0",
-    "uikit": "^2.26.3"
+    "bootstrap": "^3.3.6"
   }
 }

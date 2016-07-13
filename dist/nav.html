@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta http-equiv="Cache-Control" content="no-transform"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta content="yes" name="apple-touch-fullscreen"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title>Nav</title>
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+<body>
+    <h1>导航列表</h1>
+    <h2>基础导航列表</h2>
+    <ul class="uk-nav ">
+        <li class="uk-active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+    </ul>
+    <hr/>
+    <h2>嵌套导航列表</h2>
+    <ul class="uk-nav ">
+        <li class="uk-active"><a href="#">1</a></li>
+        <li>
+            <a href="#">2</a>
+
+            <ul class="uk-nav ">
+                <li class="uk-active"><a href="#">2.1</a></li>
+                <li><a href="#">2.2</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>侧边栏样式</h2>
+    <hr/>
+    <ul class="uk-nav uk-nav-side">
+        <li class="uk-active"><a href="#">1</a></li>
+        <li>
+            <a href="#">2</a>
+
+            <ul class="uk-nav ">
+                <li class="uk-active"><a href="#">2.1</a></li>
+                <li><a href="#">2.2</a></li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <h2>带ICON标志的侧边栏</h2>
+    <ul class="uk-nav uk-nav-side uk-nav-parent-icon" data-uk-nav>
+        <li class="uk-active"><a href="#">Active</a></li>
+
+        <li class="uk-parent uk-open">
+            <a href="#">Parent</a>
+            <ul class="uk-nav-sub">
+                <li><a href="#">Sub item</a></li>
+                <li><a href="#">Sub item</a>
+                    <ul>
+                        <li><a href="#">Sub item</a></li>
+                        <li><a href="#">Sub item</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/custom.js"></script>
+</html>

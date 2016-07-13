@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta http-equiv="Cache-Control" content="no-transform"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta content="yes" name="apple-touch-fullscreen"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title>页面框架布局</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+</head>
+<body>
+<div class="container">
+    <aside class="left-slider">
+        <a href="" class="logo">后台管理</a>
+        <div class="slider-view">
+            <ul >
+                <li class="submenu open">
+                    <a href="#"><i class="icon icon-th-list"></i> <span>角色管理</span> <span class="label">4</span></a>
+                    <ul>
+                        <li><a href="form-common.html">搜索角色</a></li>
+                        <li class="active"><a href="form-validation.html">角色详情</a></li>
+                        <li><a href="form-wizard.html">添加角色</a></li>
+                        <li><a href="form-wizard.html">修改角色</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <header class="top-nav">
+        <div class="nav-menu">
+            <ul class="nav">
+                <li>
+                    <a href="">
+                        <img src="./img/avatar.jpg" alt="" class="img-user">
+                        <strong>@john</strong>
+                    </a>
+                </li>
+                <li><a href="">退出</a></li>
+                <li><a href="">登录</a></li>
+            </ul>
+        </div>
+    </header>
+    <aside class="right-content">
+        <div class="content-header">
+            <div class="breadcrumb">
+                <a href="#" class="tip-bottom" data-original-title="Go to Home"><i class="icon-home"></i>首页</a>
+                <a href="#" class="tip-bottom" data-original-title="Go to Home">角色管理</a>
+                <a href="#" class="current">角色详情</a> </div>
+            <h1>角色详情</h1>
+        </div>
+        <div class="content-container">
+            <hr/>
+            <div class="widget-box">
+                <div class="widget-title"><span class="icon"><i class="icon-th"></i></span>
+                    <h5>角色详情</h5>
+                </div>
+                <div class="widget-content nopadding">
+                    <form action="#" method="get" class="form-horizontal">
+                        <div class="control-group">
+                            <label class="control-label">First Name :</label>
+                            <div class="controls">
+                                <input type="text" class="span5" placeholder="First name">
+                                <span for="email" class="help-inline">This field is required.</span>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">Last Name :</label>
+                            <div class="controls">
+                                <input type="text" class="span10" placeholder="Last name">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">Password input</label>
+                            <div class="controls">
+                                <input type="password" class="span10" placeholder="Enter Password">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">Company info :</label>
+                            <div class="controls">
+                                <input type="text" class="span10" placeholder="Company name">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">Description field:</label>
+                            <div class="controls">
+                                <input type="text" class="span10">
+                                <span class="help-block">Description field</span> </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">Message</label>
+                            <div class="controls">
+                                <textarea class="span10"></textarea>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">Select input</label>
+                            <div class="controls">
+                                <select class="form-control span10">
+                                    <option>First option</option>
+                                    <option>Second option</option>
+                                    <option>Third option</option>
+                                    <option>Fourth option</option>
+                                    <option>Fifth option</option>
+                                    <option>Sixth option</option>
+                                    <option>Seventh option</option>
+                                    <option>Eighth option</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">Radio inputs</label>
+                            <div class="controls ">
+                                <label>
+                                    <div class="radio" ><span><input type="radio" name="radios" ></span></div>
+                                    First One
+                                </label>
+                                <label>
+                                    <div class="radio" >
+                                        <span class="checked"><input type="radio" name="radios" ></span>
+                                    </div>
+                                    Second One
+                                </label>
+                                <label>
+                                    <div class="radio" ><span><input type="radio" name="radios" ></span></div>
+                                    Third One
+                                </label>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">订单状态</label>
+                            <div class="controls label-inline">
+                                <label>
+                                    <div class="radio"><span><input type="radio" name="order_state"></span></div>
+                                    未付订单
+                                </label>
+                                <label>
+                                    <div class="radio" >
+                                        <span class="checked"><input type="radio" name="order_state"></span>
+                                    </div>
+                                    跟踪订单
+                                </label>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">Checkboxes</label>
+                            <div class="controls">
+                                <label>
+                                    <div class="checker" ><span class="checked"><input type="checkbox" name="radios" ></span></div>
+                                    First One
+                                </label>
+                                <label>
+                                    <div class="checker" ><span class="checked"><input type="checkbox" name="radios" ></span></div>
+                                    Second One
+                                </label>
+                                <label>
+                                    <div class="checker" ><span class="checked"><input type="checkbox" name="radios" ></span></div>
+                                    Third One
+                                </label>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">File upload input</label>
+                            <div class="controls">
+                                <div class="uploader">
+                                    <input type="file" />
+                                    <span class="filename">没有选中文件</span>
+                                    <span class="action">浏览</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-success">返回</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <footer>
+        <div class="footer">
+            底部fixed
+        </div>
+    </footer>
+</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/custom.js"></script>
+</html>

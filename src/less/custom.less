@@ -1,5 +1,131 @@
-// LESS related
-@import "../../bower_components/uikit/less/core/variables.less";
 
-// Defaults
-@import "../../bower_components/uikit/less/core/base.less";
+@import "../../bower_components/bootstrap/less/mixins.less";
+
+/*表格列最长限制*/
+.role, .user{
+    .desc{
+        width: 250px;
+        .text-overflow();
+    }
+/*    .operation-group{
+        width: 150px;
+    }*/
+}
+/*
+    订单页面
+*/
+.order{
+    /*表单详情宽度*/
+    .detail{
+        width: 250px;
+        .text-overflow();
+    }
+    /*表单过滤内容块，下拉框长度*/
+    select{
+        width: 120px;
+    }
+}
+.order_add{
+    /*表单过滤内容块，下拉框长度*/
+    select{
+        width: 100px;
+    }
+    .icon-check{
+        color: #aaaaaa;
+    }
+    .checked .icon-check{
+        color: #08c;
+    }
+}
+
+/*
+    把表格放在表单里，为了保持宽度一值（非box-sizing:border-box;输入区域有padding),做特殊处理
+*/
+
+/*
+    存放表单的外部容器
+*/
+
+.control-box{
+    padding: 4px 6px;
+    border: 1px solid #cdcdcd;
+    .search-table-box{
+        position: relative;
+        border: 0;
+    }
+}
+/*一组操作列表*/
+.operation-list-box{
+    margin: 0 5px;
+    i{
+        margin-right: 5px;
+    }
+    position: relative;
+    display: inline-block;
+}
+.operation-list{
+    position: absolute;
+    margin-left: -50px;
+    top: 20px;
+    left: 0;
+    border: 1px solid #cdcdcd;
+    background: #fff;
+    display: none;
+    min-width: 100px;
+    a{
+        display: block;
+        margin: 5px;
+    }
+}
+.save-common-box{
+    margin-left: -150px;
+    width: 250px;
+    textarea{
+        height: 100px;
+        width: 238px;
+        margin:0;
+        border:0;
+        border-top:1px solid #ccc;
+        outline: 0;
+    }
+    div{
+        margin: 10px 0;
+        text-align: left;
+        &:before,&:after{
+            clear: both;
+            content: '';
+            display: table;
+        }
+        span{
+            margin-left: 20px;
+            display: inline-block;
+            margin-top: 5px;
+        }
+        button{
+            float: right;
+            margin-right: 20px;
+        }
+    }
+}
+/*
+   统计页
+*/
+@statistics-margin-left: 50px;
+.statistics{
+    .controls{
+        margin-left: @statistics-margin-left;
+    }
+    .form-horizontal .form-actions{
+        padding-left: @statistics-margin-left;
+    }
+}
+.statistics-result{
+    margin-top: 20px;
+    text-align: left;
+    div{
+        margin-top: 20px;
+    }
+    label{
+        display: inline;
+    }
+}

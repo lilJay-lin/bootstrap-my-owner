@@ -16,6 +16,22 @@ form {
 @control-label-width: 180px;
 @controls-margin-left: 20;
 .form-horizontal {
+    .form-title{
+        padding:15px 0 ;
+        border-top: 1px solid #ffffff;
+        border-bottom: 1px solid #eeeeee;
+    }
+    h2,h3{
+        margin:0;
+        width: @control-label-width;
+        text-align: right;
+    }
+    h3{
+        color: #2e2e2e;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 20px;
+    }
     .help-inline{
         display: inline-block;
         margin-bottom: 0;
@@ -27,7 +43,7 @@ form {
             line-height: 0;
             content: "";
         }
-        margin-left: @control-label-width - 100px;
+        padding-left: @control-label-width - 100px;
         border-top: 1px solid #ffffff;
         border-bottom: 1px solid #eeeeee;
         .control-label{
@@ -75,6 +91,11 @@ form {
         margin-left: @control-label-width + @controls-margin-left;
         padding: 10px 0;
         &.label-inline{
+            &.nopadding{
+                label{
+                    padding:0;
+                }
+            }
             label{
                 padding-top: 4px;
             }

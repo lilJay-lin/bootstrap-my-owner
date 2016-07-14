@@ -1,0 +1,190 @@
+/*表格列最长限制*/
+.role,
+.user {
+  /*    .operation-group{
+        width: 150px;
+    }*/
+}
+.role .desc,
+.user .desc {
+  width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/*
+    订单页面
+*/
+.order {
+  /*表单详情宽度*/
+  /*表单过滤内容块，下拉框长度*/
+}
+.order .detail {
+  width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.order select {
+  width: 120px;
+}
+.order_add {
+  /*表单过滤内容块，下拉框长度*/
+}
+.order_add select {
+  width: 100px;
+}
+.order_add .icon-check {
+  color: #aaaaaa;
+}
+.order_add .checked .icon-check {
+  color: #08c;
+}
+/*
+    师傅详情里面的订单查询表单
+*/
+.worker-detail-order .comment {
+  width: 250px;
+}
+/*
+    把表格放在表单里，为了保持宽度一值（非box-sizing:border-box;输入区域有padding),做特殊处理
+*/
+/*
+    存放表单的外部容器
+*/
+.control-box {
+  padding: 4px 6px;
+  border: 1px solid #cdcdcd;
+}
+.control-box .search-table-box {
+  position: relative;
+  border: 0;
+}
+/*一组操作列表*/
+.operation-list-box {
+  margin: 0 5px;
+  position: relative;
+  display: inline-block;
+}
+.operation-list-box i {
+  margin-right: 5px;
+}
+.operation-list {
+  position: absolute;
+  margin-left: -50px;
+  top: 20px;
+  left: 0;
+  border: 1px solid #cdcdcd;
+  background: #fff;
+  display: none;
+  min-width: 100px;
+}
+.operation-list a {
+  display: block;
+  margin: 5px;
+}
+.save-common-box {
+  margin-left: -150px;
+  width: 250px;
+}
+.save-common-box textarea {
+  height: 100px;
+  width: 238px;
+  margin: 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+  outline: 0;
+}
+.save-common-box div {
+  margin: 10px 0;
+  text-align: left;
+}
+.save-common-box div:before,
+.save-common-box div:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+.save-common-box div span {
+  margin-left: 20px;
+  display: inline-block;
+  margin-top: 5px;
+}
+.save-common-box div button {
+  float: right;
+  margin-right: 20px;
+}
+/*
+   统计页
+*/
+.statistics .controls {
+  margin-left: 50px;
+}
+.statistics .form-horizontal .form-actions {
+  padding-left: 50px;
+}
+.statistics-result {
+  margin-top: 20px;
+  text-align: left;
+}
+.statistics-result div {
+  margin-top: 20px;
+}
+.statistics-result label {
+  display: inline;
+}
+/*
+    师傅管理
+*/
+.worker-search .form-control {
+  width: 150px;
+}
+.identity-box {
+  display: inline-block;
+  border: 1px solid #eeeeee ;
+  width: 300px;
+  height: 200px;
+}
+.inner-control-group {
+  display: inline-block;
+}
+.inner-control-group .control-label {
+  padding-top: 5px;
+}
+.workers-detail .inner-control-group .control-label {
+  width: 100px;
+}
+.workers-detail .inner-control-group .controls {
+  margin-left: 120px;
+}
+.service-region-radio label {
+  width: 100px;
+}
+.control-label.uploader-identity-wrap {
+  position: relative;
+  overflow: hidden;
+  width: 100px;
+  margin-left: 80px;
+}
+.uploader-identity {
+  position: relative;
+  overflow: hidden;
+}
+.uploader-identity .btn {
+  position: relative;
+  cursor: pointer;
+}
+.uploader-identity .btn input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  float: right;
+  height: 34px;
+  border: none;
+  cursor: default;
+}
+.worker-edit .control-box {
+  margin-right: 20px;
+}

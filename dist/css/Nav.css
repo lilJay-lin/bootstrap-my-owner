@@ -1,0 +1,71 @@
+.slider-view li {
+  line-height: 20px;
+}
+.slider-view > ul {
+  border-bottom: 1px solid #37414b;
+  list-style: none;
+  margin: 0px 0 0;
+  padding: 0;
+  width: 220px;
+}
+.slider-view > ul > li {
+  border-top: 1px solid #37414b;
+  border-bottom: 1px solid #1f262d;
+  display: block;
+  position: relative;
+  /*下级菜单*/
+}
+.slider-view > ul > li > a {
+  padding: 10px 0 10px 15px;
+  display: block;
+  color: #939da8;
+}
+.slider-view > ul > li > a > i {
+  margin-right: 10px;
+}
+.slider-view > ul > li > a:hover {
+  background-color: #27a9e3;
+  color: #fff;
+}
+.slider-view > ul > li > a > .label {
+  background-color: #f74d4d;
+  margin: 0 20px 0 0;
+  float: right;
+  padding: 3px 5px 2px;
+}
+.slider-view > ul > li.active {
+  background-color: #27a9e3;
+  border-bottom: 1px solid #27a9e3;
+  border-top: 1px solid #27a9e3;
+}
+.slider-view > ul > li.active > a {
+  background: url("../img/menu-active.png") no-repeat scroll right center transparent !important;
+  color: #fff;
+  text-decoration: none;
+}
+.slider-view > ul > li ul li a:hover,
+.slider-view > ul > li ul li.active a {
+  color: #fff;
+  background-color: #28b779;
+}
+.slider-view > ul > li.open ul {
+  display: block;
+}
+.slider-view > ul > li ul {
+  display: none;
+  margin: 0;
+  padding: 0;
+  background-color: #1e242b;
+}
+.slider-view > ul > li ul li:first-child a {
+  border-top: 0;
+}
+.slider-view > ul > li ul li a {
+  color: #939da8;
+  padding: 10px 0 10px 25px;
+  display: block;
+}
+.slider-view > ul > li ul li.active a {
+  color: #fff;
+  background-color: #28b779;
+}

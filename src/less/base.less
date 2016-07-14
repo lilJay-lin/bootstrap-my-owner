@@ -57,13 +57,17 @@ label, select, button, input[type="button"], input[type="reset"], input[type="su
     background-color: #999;
 }
 
-.setResponseSpan(@count: 12){
-
+.setWidthSpan(@width: 200)when (@width > 20) {
+    .container .span@{width}{
+        width:  @width + 0px;
+    }
+    .setWidthSpan(@width - 10);
 }
 .setResponseSpan(@count: 12) when (@count > 1) {
-    .span@{count}{
+    .container .span@{count}{
         width: 100% / 12 * @count;
     }
     .setResponseSpan(@count - 1);
 }
 .setResponseSpan();
+.setWidthSpan();

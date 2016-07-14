@@ -56,7 +56,7 @@
             </div>
             <div class="content-container">
                 <hr/>
-                <div class="widget-box work_search">
+                <div class="widget-box worker-search">
                     <div class="widget-title"><span class="icon"><i class="icon-th"></i></span>
                         <h5>师傅信息</h5>
                     </div>
@@ -83,7 +83,7 @@
                                     <option>Second option</option>
                                     <option>Third option</option>
                                 </select>
-                                <input type="text" />
+                                <input type="text" placeholder="师傅名、电话"/>
                                 <button type="button" class="btn btn-info">搜索</button>
                                 <button type="button" class="btn btn-info">新增</button>
                             </label>
@@ -91,9 +91,14 @@
                     </div>
                     <div class="widget-content ">
 
-                        <table class="table">
+                        <table class="table with-check">
                             <thead>
                             <tr>
+                                <th>
+                                    <div class="checker" >
+                                        <span><input type="checkbox"  name="title-table-checkbox"></span>
+                                    </div>
+                                </th>
                                 <th>工号</th>
                                 <th>名称</th>
                                 <th>电话</th>
@@ -101,10 +106,16 @@
                                 <th>服务地区</th>
                                 <th>评价</th>
                                 <th>合作次数</th>
+                                <th>备注</th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr>
+                                <td>
+                                    <div class="checker" >
+                                        <span class="checked"><input type="checkbox" style="opacity: 0;"></span>
+                                    </div>
+                                </td>
                                 <td>Row 1</td>
                                 <td>Row 1</td>
                                 <td>Row 1</td>
@@ -119,6 +130,9 @@
                         </table>
 
                         <div class="fg-toolbar">
+                            <div class="fg-toolbar-operation">
+                                <button type="button" class="btn btn-success">批量删除</button>
+                            </div>
                             <div class="pagination " >
                                 <a tabindex="0" class="first pg-button  pg-state-disabled" >首页</a>
                                 <a tabindex="0" class="previous pg-button  pg-state-disabled">上一页</a>

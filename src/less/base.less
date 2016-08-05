@@ -15,7 +15,11 @@
 // Core CSS
 @import "../../bower_components/bootstrap/less/type.less";
 @import "../../bower_components/bootstrap/less/buttons.less";
+@import "../../bower_components/bootstrap/less/close.less";
+/*去掉bootstrap的自适应*/
+@import "./modals.less";
 html,body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     width: 100%;
     height: 100%;
 }
@@ -28,6 +32,12 @@ body{
 a, a:hover{
     color: #08c;
     text-decoration: none;
+}
+h1, h2, h3 {
+    line-height: 40px;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 10px 0;
 }
 hr {
     margin: 20px 0;
@@ -81,3 +91,33 @@ label, select, button, input[type="button"], input[type="reset"], input[type="su
 }
 .setResponseSpan();
 .setWidthSpan();
+
+/*
+ 收起，置顶
+*/
+.go-up{
+    position: fixed;
+    right: 60px;
+    bottom: 100px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: url('../img/go.png') #383e4b 0 0 no-repeat;
+    background-size: cover;
+}
+.slider-toggle{
+    position: fixed;
+    left: 165px;
+    bottom: 100px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: url('../img/go.png') #28b779 0 0 no-repeat;
+    background-size: cover;
+    transform: rotate3d(0, 0, 1, -90deg);
+    transition: transform 1s linear;
+    &.extend{
+        left:0;
+        transform: rotate3d(0, 0, 1, 90deg);
+    }
+}
